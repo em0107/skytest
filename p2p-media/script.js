@@ -28,7 +28,7 @@ const Peer = window.Peer;
   localVideo.playsInline = true;
   await localVideo.play().catch(console.error);
 
-alert(key: window);
+alert(window.__SKYWAY_KEY__);
 
   const peer = (window.peer = new Peer({
     key: window.__SKYWAY_KEY__,
