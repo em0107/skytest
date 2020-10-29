@@ -28,8 +28,10 @@ const Peer = window.Peer;
   localVideo.playsInline = true;
   await localVideo.play().catch(console.error);
 
+window.__SKYWAY_KEY__ = '1a42b86b-f45d-4e86-95f0-f8c7266a2326';
+
   const peer = (window.peer = new Peer({
-    key: window.__SKYWAY_KEY__,    
+    key: window.__SKYWAY_KEY__,
     debug: 3,
   }));
 
